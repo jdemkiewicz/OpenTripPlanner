@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OpenTripPlanner</string>
+    <string name="action_settings">Settings</string>
+</resources>
