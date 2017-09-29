@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="1000dp"
+        android:minWidth="1000dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="com.jdemkiewicz.opentripplanner.SearchDialogFragment">
+
+        <TextView
+            style="@style/textLabel"
+            android:text="@string/town" />
+
+        <EditText
+            android:id="@+id/search_town"
+            style="@style/editTextField"
+            android:hint="@string/town"
+            android:inputType="textPersonName" />
+
+        <TextView
+            style="@style/textLabel"
+            android:layout_marginTop="16dp"
+            android:text="@string/mode" />
+
+        <LinearLayout
+            android:id="@+id/search_checkBoxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <TextView
+            style="@style/textLabel"
+            android:layout_marginTop="16dp"
+            android:text="@string/from" />
+
+        <EditText
+            android:id="@+id/search_latitudeFrom"
+            style="@style/editTextField"
+            android:hint="@string/latitude"
+            android:inputType="numberDecimal"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/search_longitudeFrom"
+            style="@style/editTextField"
+            android:hint="@string/longitude"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            style="@style/textLabel"
+            android:layout_marginTop="16dp"
+            android:text="@string/to" />
+
+        <EditText
+            android:id="@+id/search_latitudeTo"
+            style="@style/editTextField"
+            android:hint="@string/latitude"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/search_longitudeTo"
+            style="@style/editTextField"
+            android:hint="@string/longitude"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/search_searchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/search_dismiss"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right|top"
+        android:clickable="true"
+        android:src="@drawable/ic_close_black_24dp" />
+
+</FrameLayout>

@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">OpenTripPlanner</string>
     <string name="action_settings">Settings</string>
+    <string name="mode">Mode</string>
+    <string name="from">From</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="to">To</string>
+    <string name="search">Search</string>
+    <string name="town">Town</string>
 </resources>
