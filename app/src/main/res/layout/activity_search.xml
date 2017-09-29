@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:minHeight="1000dp"
+    android:minWidth="1000dp"
     android:orientation="vertical"
     tools:context="com.jdemkiewicz.opentripplanner.SearchActivity">
 

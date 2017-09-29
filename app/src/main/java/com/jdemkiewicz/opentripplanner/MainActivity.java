@@ -6,11 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
+import com.jdemkiewicz.opentripplanner.ApiModel.Itinerary;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SearchFragmentInterfac{
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
@@ -27,8 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.fab)
     public void onFabClicked() {
-        Intent intent = new Intent(this, SearchActivity.class);
-        startActivity(intent);
+        SearchActivity searchActivity = new SearchActivity();
+        searchActivity.show(getSupportFragmentManager(), "asda");
     }
 
+    @Override
+    public void showResult(Itinerary itinerary) {
+
+    }
 }

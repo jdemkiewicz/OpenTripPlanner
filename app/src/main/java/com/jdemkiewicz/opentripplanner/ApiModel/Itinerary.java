@@ -16,10 +16,10 @@ public class Itinerary {
     private Integer duration;
     @SerializedName("startTime")
     @Expose
-    private Integer startTime;
+    private Long startTime;
     @SerializedName("endTime")
     @Expose
-    private Integer endTime;
+    private Long endTime;
     @SerializedName("walkTime")
     @Expose
     private Integer walkTime;
@@ -59,19 +59,19 @@ public class Itinerary {
         this.duration = duration;
     }
 
-    public Integer getStartTime() {
+    public Long getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(Integer startTime) {
+    public void setStartTime(Long startTime) {
         this.startTime = startTime;
     }
 
-    public Integer getEndTime() {
+    public Long getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(Integer endTime) {
+    public void setEndTime(Long endTime) {
         this.endTime = endTime;
     }
 

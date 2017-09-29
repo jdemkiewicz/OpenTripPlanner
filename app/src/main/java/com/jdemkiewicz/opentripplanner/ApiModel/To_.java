@@ -26,10 +26,10 @@ public class To_ {
     private Double lat;
     @SerializedName("arrival")
     @Expose
-    private Integer arrival;
+    private Long arrival;
     @SerializedName("departure")
     @Expose
-    private Integer departure;
+    private Long departure;
     @SerializedName("stopIndex")
     @Expose
     private Integer stopIndex;
@@ -83,19 +83,19 @@ public class To_ {
         this.lat = lat;
     }
 
-    public Integer getArrival() {
+    public Long getArrival() {
         return arrival;
     }
 
-    public void setArrival(Integer arrival) {
+    public void setArrival(Long arrival) {
         this.arrival = arrival;
     }
 
-    public Integer getDeparture() {
+    public Long getDeparture() {
         return departure;
     }
 
-    public void setDeparture(Integer departure) {
+    public void setDeparture(Long departure) {
         this.departure = departure;
     }
 

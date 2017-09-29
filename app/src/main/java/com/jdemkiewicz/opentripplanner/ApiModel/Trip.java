@@ -7,7 +7,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by j.demkiewicz on 28.09.2017.
  */
 
-public class JSON {
+public class Trip {
 
         @SerializedName("requestParameters")
         @Expose

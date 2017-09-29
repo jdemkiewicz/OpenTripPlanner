@@ -1,12 +1,9 @@
 package com.jdemkiewicz.opentripplanner;
 
-import com.jdemkiewicz.opentripplanner.ApiModel.JSON;
-import com.jdemkiewicz.opentripplanner.ApiModel.Plan;
+import com.jdemkiewicz.opentripplanner.ApiModel.Trip;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Header;
-import retrofit2.http.Headers;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
@@ -15,7 +12,8 @@ import retrofit2.http.Query;
  */
 
 public interface OTPService {
-    @Headers("Accept: application/json")
+//    @Headers("Accept: application/json")
     @GET("routers/{path}/plan")
-    Call<JSON> getPlan(@Path("path") String path, @Query("fromPlace") String fromPlace, @Query("toPlace") String toPlace);
+    Call<Trip> getPlan(@Path("path") String path, @Query("fromPlace") String fromPlace, @Query("toPlace") String toPlace,
+                       @Query("mode") String mode);
 }

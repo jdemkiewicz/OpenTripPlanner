@@ -12,7 +12,7 @@ import java.util.List;
 public class Plan {
     @SerializedName("date")
     @Expose
-    private Integer date;
+    private Long date;
     @SerializedName("from")
     @Expose
     private From from;
@@ -23,11 +23,11 @@ public class Plan {
     @Expose
     private List<Itinerary> itineraries = null;
 
-    public Integer getDate() {
+    public Long getDate() {
         return date;
     }
 
-    public void setDate(Integer date) {
+    public void setDate(Long date) {
         this.date = date;
     }
 
