@@ -10,6 +10,7 @@ import java.util.List;
  */
 
 public class Error {
+
     @SerializedName("id")
     @Expose
     private Integer id;
@@ -65,4 +66,5 @@ public class Error {
     public void setNoPath(Boolean noPath) {
         this.noPath = noPath;
     }
+
 }

@@ -12,12 +12,6 @@ public class To_ {
     @SerializedName("name")
     @Expose
     private String name;
-    @SerializedName("stopId")
-    @Expose
-    private String stopId;
-    @SerializedName("stopCode")
-    @Expose
-    private String stopCode;
     @SerializedName("lon")
     @Expose
     private Double lon;
@@ -30,15 +24,6 @@ public class To_ {
     @SerializedName("departure")
     @Expose
     private Long departure;
-    @SerializedName("stopIndex")
-    @Expose
-    private Integer stopIndex;
-    @SerializedName("stopSequence")
-    @Expose
-    private Integer stopSequence;
-    @SerializedName("vertexType")
-    @Expose
-    private String vertexType;
     @SerializedName("orig")
     @Expose
     private String orig;
@@ -49,22 +34,6 @@ public class To_ {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getStopId() {
-        return stopId;
-    }
-
-    public void setStopId(String stopId) {
-        this.stopId = stopId;
-    }
-
-    public String getStopCode() {
-        return stopCode;
-    }
-
-    public void setStopCode(String stopCode) {
-        this.stopCode = stopCode;
     }
 
     public Double getLon() {
@@ -97,30 +66,6 @@ public class To_ {
 
     public void setDeparture(Long departure) {
         this.departure = departure;
-    }
-
-    public Integer getStopIndex() {
-        return stopIndex;
-    }
-
-    public void setStopIndex(Integer stopIndex) {
-        this.stopIndex = stopIndex;
-    }
-
-    public Integer getStopSequence() {
-        return stopSequence;
-    }
-
-    public void setStopSequence(Integer stopSequence) {
-        this.stopSequence = stopSequence;
-    }
-
-    public String getVertexType() {
-        return vertexType;
-    }
-
-    public void setVertexType(String vertexType) {
-        this.vertexType = vertexType;
     }
 
     public String getOrig() {

@@ -18,12 +18,6 @@ public class To {
     @SerializedName("lat")
     @Expose
     private Double lat;
-    @SerializedName("orig")
-    @Expose
-    private String orig;
-    @SerializedName("vertexType")
-    @Expose
-    private String vertexType;
 
     public String getName() {
         return name;
@@ -47,22 +41,6 @@ public class To {
 
     public void setLat(Double lat) {
         this.lat = lat;
-    }
-
-    public String getOrig() {
-        return orig;
-    }
-
-    public void setOrig(String orig) {
-        this.orig = orig;
-    }
-
-    public String getVertexType() {
-        return vertexType;
-    }
-
-    public void setVertexType(String vertexType) {
-        this.vertexType = vertexType;
     }
 
 }
