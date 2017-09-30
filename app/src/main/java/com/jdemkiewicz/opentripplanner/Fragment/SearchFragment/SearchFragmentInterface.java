@@ -1,9 +1,6 @@
-package com.jdemkiewicz.opentripplanner;
+package com.jdemkiewicz.opentripplanner.Fragment.SearchFragment;
 
-import com.jdemkiewicz.opentripplanner.ApiModel.Itinerary;
 import com.jdemkiewicz.opentripplanner.ApiModel.Plan;
-
-import java.util.List;
 
 /**
  * Created by j.demkiewicz on 29.09.2017.

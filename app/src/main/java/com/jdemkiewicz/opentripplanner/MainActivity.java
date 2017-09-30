@@ -10,8 +10,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.jdemkiewicz.opentripplanner.Adapter.StopsAdapter;
-import com.jdemkiewicz.opentripplanner.ApiModel.Leg;
 import com.jdemkiewicz.opentripplanner.ApiModel.Plan;
+import com.jdemkiewicz.opentripplanner.Fragment.SearchFragment.SearchDialogFragment;
+import com.jdemkiewicz.opentripplanner.Fragment.SearchFragment.SearchFragmentInterface;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

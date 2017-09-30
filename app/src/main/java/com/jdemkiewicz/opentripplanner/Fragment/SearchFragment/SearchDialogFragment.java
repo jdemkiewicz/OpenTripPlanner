@@ -1,4 +1,4 @@
-package com.jdemkiewicz.opentripplanner;
+package com.jdemkiewicz.opentripplanner.Fragment.SearchFragment;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -15,7 +15,11 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
+import com.jdemkiewicz.opentripplanner.ApiClient;
 import com.jdemkiewicz.opentripplanner.ApiModel.Trip;
+import com.jdemkiewicz.opentripplanner.ModeEnum;
+import com.jdemkiewicz.opentripplanner.OTPService;
+import com.jdemkiewicz.opentripplanner.R;
 
 import java.util.Arrays;
 

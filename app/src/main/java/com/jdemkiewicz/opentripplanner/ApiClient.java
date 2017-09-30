@@ -11,7 +11,7 @@ public class ApiClient {
     private static final String BASE_URL = "http://79.137.82.41:9000/otp/";
     private Retrofit retrofit;
 
-    ApiClient() {
+    public ApiClient() {
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
