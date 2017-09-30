@@ -1,29 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stopsCardLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.jdemkiewicz.opentripplanner.MainActivity"
-    tools:showIn="@layout/activity_main">
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="5dp">
 
-    <TextView
-        android:id="@+id/mainEmptyText"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        style="@style/MainTextLabel"
-        android:text="@string/find_your_way" />
-
-    <android.support.v7.widget.CardView
-        android:id="@+id/mainPlanCard"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="4dp"
-        android:visibility="gone"
-        app:cardCornerRadius="5dp">
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/stopsCardMode"
+            style="@style/MainTextLabel"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/mode" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,20 +33,21 @@
                 android:padding="8dp">
 
                 <TextView
+                    android:id="@+id/stopsCardOrigin"
                     style="@style/MainTextLabel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/origin" />
 
                 <TextView
-                    android:id="@+id/mainFromCoordinates"
+                    android:id="@+id/stopsCardFromCoordinates"
                     style="@style/DetailsStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/coordinates" />
 
                 <TextView
-                    android:id="@+id/mainFromData"
+                    android:id="@+id/stopsCardFromData"
                     style="@style/DetailsStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -68,20 +63,21 @@
                 android:padding="8dp">
 
                 <TextView
+                    android:id="@+id/stopsCardDestination"
                     style="@style/MainTextLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/destination" />
 
                 <TextView
-                    android:id="@+id/mainToCoordinates"
+                    android:id="@+id/stopsCardToCoordinates"
                     style="@style/DetailsStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/coordinates" />
 
                 <TextView
-                    android:id="@+id/mainToData"
+                    android:id="@+id/stopsCardToData"
                     style="@style/DetailsStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -89,12 +85,6 @@
 
             </LinearLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/mainStopsContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone" />
-
-</LinearLayout>
+</android.support.v7.widget.CardView>

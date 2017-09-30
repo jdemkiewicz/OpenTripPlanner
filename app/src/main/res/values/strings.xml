@@ -8,4 +8,9 @@
     <string name="to">To</string>
     <string name="search">Search</string>
     <string name="town">Town</string>
+    <string name="coordinates">Coordinates</string>
+    <string name="data">Data</string>
+    <string name="origin">Origin</string>
+    <string name="destination">Destination</string>
+    <string name="find_your_way">Find Your Way</string>
 </resources>

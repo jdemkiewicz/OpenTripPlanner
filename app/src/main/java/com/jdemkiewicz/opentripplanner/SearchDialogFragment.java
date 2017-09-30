@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.Toast;
+import android.widget.ProgressBar;
 
 import com.jdemkiewicz.opentripplanner.ApiModel.Trip;
 
@@ -39,6 +39,8 @@ public class SearchDialogFragment extends DialogFragment {
     EditText townEditText;
     @BindView(R.id.search_checkBoxContainer)
     LinearLayout checkBoxContainer;
+    @BindView(R.id.search_progressBar)
+    ProgressBar progressBar;
     private View view;
 
     private SearchFragmentInterface callback;
@@ -80,10 +82,9 @@ public class SearchDialogFragment extends DialogFragment {
         dismiss();
     }
 
-    //"51.122182,16.991945", "51.107904,17.030826"
-
     @OnClick(R.id.search_searchBtn)
     public void onSearchClicked() {
+        progressBar.setVisibility(View.VISIBLE);
         String fromPlace = getPlaceParam(latitudeFromEditText, longitudeFromEditText);
         String toPlace = getPlaceParam(latitudeToEditText, longitudeToEditText);
         String path = townEditText.getText().toString().toLowerCase();
@@ -103,11 +104,12 @@ public class SearchDialogFragment extends DialogFragment {
                     }
 
                     @Override
-                    public void onFailure(Call<Trip> call, Throwable t) {
+                    public void onFailure(@NonNull Call<Trip> call, @NonNull Throwable t) {
                         displaySnackBar(t.getMessage());
                         Log.d("onFailure: ", Arrays.toString(t.getStackTrace()));
                     }
                 });
+        progressBar.setVisibility(View.GONE);
     }
 
     private String getPlaceParam(EditText latitude, EditText longitude) {

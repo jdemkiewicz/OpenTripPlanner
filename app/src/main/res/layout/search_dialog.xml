@@ -4,6 +4,13 @@
     android:layout_height="match_parent"
     android:layout_gravity="center">
 
+    <ProgressBar
+        android:id="@+id/search_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,7 +21,7 @@
         tools:context="com.jdemkiewicz.opentripplanner.SearchDialogFragment">
 
         <TextView
-            style="@style/textLabel"
+            style="@style/SearchTextLabel"
             android:text="@string/town" />
 
         <EditText
@@ -24,7 +31,7 @@
             android:inputType="textPersonName" />
 
         <TextView
-            style="@style/textLabel"
+            style="@style/SearchTextLabel"
             android:layout_marginTop="16dp"
             android:text="@string/mode" />
 
@@ -36,7 +43,7 @@
             android:orientation="horizontal" />
 
         <TextView
-            style="@style/textLabel"
+            style="@style/SearchTextLabel"
             android:layout_marginTop="16dp"
             android:text="@string/from" />
 
@@ -54,7 +61,7 @@
             android:inputType="numberDecimal" />
 
         <TextView
-            style="@style/textLabel"
+            style="@style/SearchTextLabel"
             android:layout_marginTop="16dp"
             android:text="@string/to" />
 
@@ -69,15 +76,15 @@
             style="@style/editTextField"
             android:hint="@string/longitude"
             android:inputType="numberDecimal" />
-
-        <Button
-            android:id="@+id/search_searchBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/search"
-            android:textStyle="bold" />
-
     </LinearLayout>
+
+    <Button
+        android:id="@+id/search_searchBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="@string/search"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/search_dismiss"

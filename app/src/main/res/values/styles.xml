@@ -17,12 +17,26 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="textLabel">
+    <style name="WrapHeightAndWidth">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="SearchTextLabel" parent="WrapHeightAndWidth">
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">18sp</item>
         <item name="android:padding">8dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="MainTextLabel" parent="WrapHeightAndWidth">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="DetailsStyle" parent="WrapHeightAndWidth">
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">4dp</item>
     </style>
 
     <style name="editTextField">
