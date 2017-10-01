@@ -12,7 +12,6 @@ import retrofit2.http.Query;
  */
 
 public interface OTPService {
-//    @Headers("Accept: application/json")
     @GET("routers/{path}/plan")
     Call<Trip> getPlan(@Path("path") String path, @Query("fromPlace") String fromPlace, @Query("toPlace") String toPlace,
                        @Query("mode") String mode);

@@ -43,8 +43,8 @@ public class StopsAdapter extends RecyclerView.Adapter<StopsAdapter.StopsViewHol
         holder.destination.setText(leg.getTo().getName());
         holder.fromCoordinates.setText(getCoordinates(leg.getFrom().getLat(), leg.getFrom().getLon()));
         holder.toCoordinates.setText(getCoordinates(leg.getTo().getLat(), leg.getTo().getLon()));
-        holder.fromData.setText(getTime(leg.getFrom().getDeparture()));
-        holder.toData.setText(getTime(leg.getTo().getArrival()));
+        holder.fromData.setText(String.format("Departure: %s", getTime(leg.getFrom().getDeparture())));
+        holder.toData.setText(String.format("Arrival: %s", getTime(leg.getTo().getArrival())));
     }
 
     private String getCoordinates(Double lat, Double lon) {

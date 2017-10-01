@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity implements SearchFragmentInt
 
     @Override
     public void showResult(Plan plan) {
-        String endTimeText = getTime(plan.getItineraries().get(0).getEndTime());
-        String startTimeText = getTime(plan.getItineraries().get(0).getStartTime());
+        String endTimeText = "Arrival: " + getTime(plan.getItineraries().get(0).getEndTime());
+        String startTimeText = "Departure: " + getTime(plan.getItineraries().get(0).getStartTime());
         String fromCoordinates = getCoordinates(plan.getFrom().getLat(), plan.getFrom().getLon());
         String toCoordinates = getCoordinates(plan.getTo().getLat(), plan.getTo().getLon());
         setResults(fromCoordinates, toCoordinates, startTimeText, endTimeText);

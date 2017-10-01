@@ -90,7 +90,7 @@
         android:id="@+id/search_dismiss"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_gravity="right|top"
+        android:layout_gravity="end|top"
         android:clickable="true"
         android:src="@drawable/ic_close_black_24dp" />
 

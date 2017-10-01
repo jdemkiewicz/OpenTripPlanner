@@ -14,6 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:visibility="visible"
         style="@style/MainTextLabel"
         android:text="@string/find_your_way" />
 
@@ -23,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
         android:visibility="gone"
+        app:cardBackgroundColor="@color/colorPrimary"
         app:cardCornerRadius="5dp">
 
         <LinearLayout
@@ -47,6 +49,7 @@
                 <TextView
                     android:id="@+id/mainFromCoordinates"
                     style="@style/DetailsStyle"
+                    android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/coordinates" />
@@ -54,6 +57,7 @@
                 <TextView
                     android:id="@+id/mainFromData"
                     style="@style/DetailsStyle"
+                    android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/data" />
@@ -77,11 +81,13 @@
                     android:id="@+id/mainToCoordinates"
                     style="@style/DetailsStyle"
                     android:layout_width="wrap_content"
+                    android:textStyle="bold"
                     android:layout_height="wrap_content"
                     android:text="@string/coordinates" />
 
                 <TextView
                     android:id="@+id/mainToData"
+                    android:textStyle="bold"
                     style="@style/DetailsStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

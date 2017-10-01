@@ -5,7 +5,6 @@ package com.jdemkiewicz.opentripplanner;
  */
 
 public enum ModeEnum {
-    //BUS, TRAM, WALK
     BUS("BUS"), TRAM("TRAM"), WALK("WALK");
     private String title;
     private boolean isChecked;
